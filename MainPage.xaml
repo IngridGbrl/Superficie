@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Superficie.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center" BackgroundColor="Beige">
+
+            <Image
+                Source="triangulo.png"
+           
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+  
+
+            <Label Text="Altura del triangulo"  FontSize="18" TextColor="DarkOrange" />
+            <Entry x:Name="h" Placeholder="Digite altura del triangulo" Keyboard="Numeric" TextColor="DimGray"/>
+
+            <Label Text="Base del triangulo"  FontSize="18" TextColor="DarkOrange" />
+            <Entry x:Name="b" Placeholder="Digite base del triangulo" Keyboard="Numeric" TextColor="DimGray"/>
+
+
+            <Label Text="Superfiie del triangulo"  FontSize="18" TextColor="OrangeRed" />
+            <Entry x:Name="superficie" Placeholder="0" IsEnabled="False"/>
+
+
+            <Button
+                x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" BackgroundColor="DarkOrange" 
+                TextColor="Black" BorderColor="AliceBlue"
+                WidthRequest="100" HeightRequest="50" BorderWidth="3" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
